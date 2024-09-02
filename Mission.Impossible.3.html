@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬Movies🍿</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 50.71%), 
+                      linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), 
+                      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    background-color: rgb(40, 40, 40);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.Logo{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 720px) {
+    .container {
+        justify-content: space-between; 
+    }
+
+    .Logo{
+        margin-left: 15px;
+    }
+
+    .Button-back{
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        align-content: flex-start;
+        margin-top: -50px;
+        
+    }
+
+    .JourneytotheCenteroftheEarth {
+        width: 500px; /* Fixed width */
+        height: 500px;
+        margin-top: 50px;
+    }
+
+    .DescriptionMovie {
+        flex-grow: 1; 
+        
+    }
+
+    .VideoMovie {
+        border-radius: 15px; /* Optional: Rounded corners */
+        display: block; /* Ensures no extra space around the video */
+    }
+
+    
+}
+
+
+.footer {
+    position: relative;
+    background-color: rgb(24, 24, 24);
+    left: 0;
+    top: 230px;
+    width: calc(100% - 10px);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 9;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.JourneytotheCenteroftheEarth{
+    background-image: url(./Images/Mission.Impossible.3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+    top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 500px;
+    border-radius: 15px;
+    border: 5px solid rgb(40, 40, 40);
+}
+
+.Button-back{
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color: rgb(174, 174, 174);
+    text-decoration: none;
+}
+
+.Button-back a{
+    color: rgb(174, 174, 174);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.Button-back a:hover{
+    color: white;
+}
+
+.DescriptionMovie{
+    position: relative;
+    background-color: rgb(40, 40, 40);;
+    top: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid rgb(40, 40, 40);
+}
+
+.VideoMovie {
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    max-height: 500px;
+    border-radius: 15px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <div class="Logo">Another Reality</div>
+        <button class="Button-back"><a href="./index.html">Back👈</a></button>
+    </nav>
+    <div class="content-wrapper">
+        <div class="JourneytotheCenteroftheEarth"></div>
+        <div class="DescriptionMovie">
+
+            <video class="VideoMovie" src="#" width="425px" height="500px" controls>Something is wrong.</video>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p> <b style="color: red;">IMPORTANT!</b> <br> All the material was downloaded from <b style="color: red;">INTERNET</b>! <br> I am <b style="color: red;">NOT</b> the author <b style="color: red;">ONLY</b> of material!</p>
+    </footer>
+</body>
+</html>
